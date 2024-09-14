@@ -1,6 +1,9 @@
+
 def is_there_a (word):
+    #Contador de quantas vezes o A está na string
     count = 0
 
+    #Função de percorrer a lista em busca do A, ao mesmo tempo que conta sempre que ele apaece
     for char in word:
         if char == 'a' or char == 'A':
             count += 1
