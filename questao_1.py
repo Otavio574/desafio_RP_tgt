@@ -8,11 +8,13 @@ def is_fibonnacci(num):
         return True
     
     while fib_2 < num:
-        fib_1 = fib_2
-        fib_2 = fib_1 + fib_2
+        fib_1, fib_2 = fib_2, fib_1 + fib_2
     
     if fib_2 == num:
+        print('a')
         return True
+
+    return False
 
 number = int(input())
 
